@@ -111,13 +111,6 @@ function Form() {
           Sign Up
         </button>
       </form>
-
-      <div>
-        <h2>Form Values</h2>
-        <p>Name: {values.name}</p>
-        <p>email: {values.email}</p>
-        <p>date: {values.age}</p>
-      </div>
     </div>
   );
 }

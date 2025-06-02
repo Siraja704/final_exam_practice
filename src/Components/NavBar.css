@@ -9,6 +9,9 @@
 }
 .navbar {
   display: flex;
+  gap: 20px;
+  text-decoration: none;
+  list-style: none;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;

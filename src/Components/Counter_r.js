@@ -13,16 +13,14 @@ const reducer = (state, action) => {
   }
 };
 
-function Counter_r({ name }) {
+function Counter_r() {
   const [count, dispatch] = useReducer(reducer, intailstate);
   const [check, setCheck] = React.useState("I am not checked");
 
   return (
     <div>
       <h1>Counter Component</h1>
-      <div>
-        My name is {name} and {check}
-      </div>
+
       <h2>Count: {count}</h2>
       <button onClick={() => dispatch("inc")}> Increament</button>
       <button onClick={() => dispatch("dec")}>Decreament</button>

@@ -1,18 +1,56 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Counter_r from "./Components/Counter_r";
+import Counter from "./Components/Counter";
 import NavBar from "./Components/NavBar";
+import Form from "./Components/Form";
+import Home from "./Components/Home";
 
-import { browseRouter } from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <NavBar />
+        <Home />
+      </>
+    ),
+  },
+  {
+    path: "/counter_r",
+    element: (
+      <>
+        <NavBar />
+        <Counter_r />
+      </>
+    ),
+  },
+  {
+    path: "/counter",
+    element: (
+      <>
+        <NavBar />
+        <Counter />
+      </>
+    ),
+  },
 
-const router = browseRouter;
+  {
+    path: "/Sign Up",
+    element: (
+      <>
+        <NavBar />
+        <Form />
+      </>
+    ),
+  },
+]);
 
-let number = 0;
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <RouterProvider router={router} />
     </div>
   );
 }
