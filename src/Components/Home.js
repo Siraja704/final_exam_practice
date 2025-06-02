@@ -21,6 +21,26 @@ const Home = () => {
       <form>
         <input type="checkbox" id="router-routing" name="router-routing" />
         <label htmlFor="router-routing">Router Routing</label>
+
+        <br />
+        <input type="checkbox" id="useReducer" name="useReducer" />
+        <label htmlFor="useReducer">Use Reducer</label>
+        <br />
+        <input type="checkbox" id="useFormik" name="useFormik" />
+        <label htmlFor="useFormik">Use Formik</label>
+        <br />
+        <input type="checkbox" id="useState" name="useState" />
+        <label htmlFor="useState">Use State</label>
+        <br />
+        <input type="checkbox" id="useEffect" name="useEffect" />
+        <label htmlFor="useEffect">Use Effect</label>
+        <br />
+        <input type="checkbox" id="useContext" name="useContext" />
+        <label htmlFor="useContext">Use Context</label>
+        <br />
+        <input type="checkbox" id="useRef" name="useRef" />
+        <label htmlFor="useRef">Use Ref</label>
+        <br />
       </form>
     </div>
   );
