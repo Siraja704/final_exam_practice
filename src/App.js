@@ -1,12 +1,15 @@
 import "./App.css";
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Counter_r from "./Components/Counter_r";
+import CounterR from "./Components/CounterR";
 import Counter from "./Components/Counter";
 import NavBar from "./Components/NavBar";
 import Form from "./Components/Form";
 import User from "./Components/User";
 import Home from "./Components/Home";
+import Tracker from "./Components/Tracker";
+import store from "./store/store";
+import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
@@ -28,11 +31,11 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/counter_r",
+    path: "/counterR",
     element: (
       <>
         <NavBar />
-        <Counter_r />
+        <CounterR />
       </>
     ),
   },
@@ -55,13 +58,24 @@ const router = createBrowserRouter([
       </>
     ),
   },
+  {
+    path: "/Tracker",
+    element: (
+      <>
+        <NavBar />
+        <Tracker />
+      </>
+    ),
+  },
 ]);
 
 function App() {
   return (
-    <div className="App">
-      <RouterProvider router={router} />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <RouterProvider router={router} />
+      </div>
+    </Provider>
   );
 }
 

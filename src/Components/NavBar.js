@@ -26,7 +26,7 @@ const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to="/counter_r"
+            to="/counterR"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Counter_r
@@ -40,6 +40,15 @@ const NavBar = () => {
             User
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/Tracker"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Tracker
+          </NavLink>
+        </li>
+
         <li>
           <NavLink
             to="/Sign Up"

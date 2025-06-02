@@ -13,9 +13,8 @@ const reducer = (state, action) => {
   }
 };
 
-function Counter_r() {
+function CounterR() {
   const [count, dispatch] = useReducer(reducer, intailstate);
-  const [check, setCheck] = React.useState("I am not checked");
 
   return (
     <div>
@@ -28,4 +27,4 @@ function Counter_r() {
   );
 }
 
-export default Counter_r;
+export default CounterR;

@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 
 const User = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const Filter = searchParams.get("Filter") == "active";
+  const Filter = searchParams.get("Filter") === "active";
 
   return (
     <div>

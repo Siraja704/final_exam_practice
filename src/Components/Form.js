@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { useFormik } from "formik";
 import "./Form.css";
 import { basicSchema } from "../schemas/index.js";
