@@ -5,6 +5,7 @@ import Counter_r from "./Components/Counter_r";
 import Counter from "./Components/Counter";
 import NavBar from "./Components/NavBar";
 import Form from "./Components/Form";
+import User from "./Components/User";
 import Home from "./Components/Home";
 
 const router = createBrowserRouter([
@@ -14,6 +15,15 @@ const router = createBrowserRouter([
       <>
         <NavBar />
         <Home />
+      </>
+    ),
+  },
+  {
+    path: "/User",
+    element: (
+      <>
+        <NavBar />
+        <User />
       </>
     ),
   },
